@@ -1,0 +1,30 @@
+¨°º©o¿,,¿o©º°¨¨°º©o¿,,¿o©º°¨¨°º©o¿,,¿o©º°¨¨°º©o¿,,¿o©º°¨
+
+	Author  : sebastien at pittet dot org
+	Date    : March 2005
+	Goal    : Label all network drives
+	Version : ShareLabels v1.1
+
+	
+Synthax rules :
+	
+	1. Each line MUST BE formatted like this :
+	   \\ServerName\ShareName;FrenchDescription;GermanDescription;EnglishDescription 
+	   Exemple:
+	   \\MyServer\Prod$;Données de production;Produktiv Dateien;Production Data
+	   
+	2. You can comment your text file. The only rule is that a line MUST BEGIN with a \\.
+	   All other lines are simply ignored.
+	   
+	3. You can run this script with 2 ways :
+	   - interactivly : double-click on it
+	   - batch mode : wscript.exe <scriptname> <FullPathOfYouTextFile>
+	   
+	4. The only system variable you can use is : %USERNAME%
+	   Ask me if you have other specific needs.
+
+¨°º©o¿,,¿o©º°¨¨°º©o¿,,¿o©º°¨¨°º©o¿,,¿o©º°¨¨°º©o¿,,¿o©º°¨
+
+\\MyFirstServer\%USERNAME%;Mes documents;Eigene Dateien;My Documents
+\\MyFirstServer\OtherDatas$;Autres données;Anderen Data;Other Data
+
